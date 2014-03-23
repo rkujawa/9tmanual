@@ -1,0 +1,10 @@
+
+*.log
+
+*.aux
+
+*.out
+
+tex/9tmanual.pdf
+
+tex/9tmanual.synctex.gz
