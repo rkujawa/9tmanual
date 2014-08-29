@@ -5,7 +5,7 @@
 \usepackage{polski}
 
 \usepackage{geometry} 
-\newgeometry{tmargin=1cm, bmargin=1.5cm, lmargin=1cm, rmargin=1cm}
+\newgeometry{tmargin=1cm, bmargin=1.3cm, lmargin=1cm, rmargin=1cm}
 
 
 
@@ -39,7 +39,7 @@ Niskobudżetowy akcelerator dla komputera Amiga 600.
 
 Dziękujemy za wybranie naszego akceleratora, który charakteryzuje się następującą specyfikacją:
 
-\begin{itemize}
+\begin{itemize}\itemsep0pt
 	\item Procesor Motorola MC68EC020FG25 taktowany 28MHz
 	\item Łączna ilość pamięci wynosi 11MB - 8MB FAST(autoconfig), 1.5MB SLOW oraz 1.5MB pamięci dodawanej do systemu przez narzędzie konfiguracyjne 9tcfg.
 	\item Funkcje mapowania kickstartu z pliku (maprom) oraz krycia kickstartu (shadowrom - rom shadowing).
@@ -48,7 +48,7 @@ Dziękujemy za wybranie naszego akceleratora, który charakteryzuje się następ
 \end{itemize}
 
 \begin{center}
-\includegraphics[scale=0.25]{ninetails-drawing.pdf}
+\includegraphics[scale=0.35]{ninetails-drawing_PL.pdf}
 \end{center}
 
 Z powodu ograniczeń przestrzennych, nie jest możliwe zamontowanie sanek na dysk twardy, co wymusza na użytkowniku konieczność
@@ -60,7 +60,7 @@ Z powodu wydzielania przez procesor dużej ilości ciepła, proszę o rozwagę p
 
 Instalacja karty jest banalna, jednak proszę o zachowanie ostrożności. W skład zestawu wchodzą:
 
-\begin{itemize}
+\begin{itemize}\itemsep0pt
 	\item Akcelerator.
 	\item Przewód z sondą podpinaną do napięcia 12V w gnieździe zasilającym.
 	\item Śrubka (wkręt) i  plastikowa tuleja.
@@ -70,7 +70,7 @@ Instalacja karty jest banalna, jednak proszę o zachowanie ostrożności. W skł
 
 \noindent W celu zamontowania karty, należy wykonać poniższe kroki:
 
-\begin{itemize}
+\begin{itemize}\itemsep0pt
 	\item Otworzyć komputer.
 	\item Nałożyć kartę na procesor MC68000FN8. Złącze 12Vin powinno być skierowane w stronę tylnej ściany komputera. Zalecane jest uprzednie spryskanie nóżek procesora czystym spirytusem lub izopropanolem i założenie karty "na mokro". Proszę nie używać spirytusu salicylowego.
 	\item Podłącz zasilanie wentylatora 12V poprzez zapięcie sondy na szynie złącza zasilacza oraz nasuwając konektor na wystający PIN 12Vin w karcie.\\
@@ -91,7 +91,7 @@ Aby w pełni wykorzystać możliwości karty, należy skorzystać z narzędzia  
 
 Jak już wspomniano wcześniej, do aktywowania niektórych funkcji jakie oferuje karta, wymagane jest użycie narzędzia 9tcfg. Narzędzie to umożliwia wyłączenie karty programowo, włączeniu trybu kompatybilności z PCMCIA okupionego zmniejszoną ilością wykrywanej pamięci o 4MB, dodawanie do systemu dodatkowej pamięci o rozmiarze 1.5MB (1+ 0.5),  czy też najważniejszej opcji dla ludzi pracujących w systemie, czyli maprom lub shadowrom. Pełną listę poleceń otrzymamy wpisując {\tt 9tcfg help}. Oto kilka przykładów:
 
-\begin{itemize}
+\begin{itemize}\itemsep0pt
 \item {\tt 9tcfg m68k on} - wyłącza kartę, po resecie amiga uruchomi się z zdezaktywowanym akceleratorem
 \item {\tt 9tcfg pcmcia on} - amiga po resecie uruchomi się z ilością pamięci pomniejszoną o 4MB na rzecz kompatybilności z PCMCIA
 \item {\tt 9tcfg moremem} - dodaje do systemu dodatkowe 1.5MB
@@ -113,6 +113,6 @@ Podziękowania należą się: Jakubowi  Bednarskiemu (yaqube), Borisowi  Krizma 
 
 
 \section*{Warunki korzystania}
-Pomimo próby uzyskania jak największej kompatybilności, nie ma możliwości zagwarantowania w 100\% bezbłędnej pracy. W związku z powyższym, używasz produktu na własne ryzyko. Autor akceleratora, jak również autor oprogramowania nie biorą odpowiedzialności, za ewentualne szkody.
+Pomimo próby uzyskania jak największej kompatybilności, nie ma możliwości zagwarantowania w 100\% bezbłędnej pracy. W związku z powyższym, używasz produktu na własne ryzyko. Autor akceleratora, jak również autor oprogramowania nie biorą odpowiedzialności za ewentualne szkody.
 
 \end{document}
